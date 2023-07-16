@@ -1,0 +1,21 @@
+# Day 1
+
+Devops is a culture or methodology which collaborates with development and Operations team to provider continuous delivery in a much better and faster way 
+than a traditional software development process.
+
+Devops is a practice, which speeds up the deployment process and ensures continuous delivery.
+
+Automation
+Automation is the use of technology to minimize repetitive and manual tasks by means of programming commands or scripts.
+
+Scaling
+Scaling is the ability to provision varying users demands by increasing or decreasing resources.
+
+Infrastructure
+Infrastructure is a collection of hardware and software resources which are needed to support delivery of compute services.
+
+Why DevOps is Important?
+
+Devops delivers faster services/products and shorten deployment cycle which reduces the chances of failures and defects.
+Different areas of teams collaborating together in order to acheieve continuous delivery which improves the efficiency.
+Reduced chances of failures and defects leads to reduce general costs and requirements also high quality product.
