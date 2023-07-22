@@ -1,0 +1,40 @@
+
+1. To view what's written in a file.
+cmd : cat fruit.txt
+
+2. To change the access permissions of files.
+cmd: chmod 761 fruit.txt
+
+3. To check which commands you have run till now.
+cmd: history
+
+4. To remove a directory/ Folder.
+cmd: rmdir devops
+
+5. To create a fruits.txt file and to view the content.
+cmd:    vim fruits.txt
+        cat fruits.txt
+
+6. Add content in devops.txt (One in each line) - Apple, Mango, Banana, Cherry, Kiwi, Orange, Guava.
+cmd:    vim devops.txt
+
+7. To Show only top three fruits from the file.
+cmd:    head -n 3 fruits.txt
+
+8. To Show only bottom three fruits from the file.
+cmd:    tail -n 3 fruits.txt
+
+9. To create another file Colors.txt and to view the content.
+cmd:    vim Colors.txt
+        cat Colors.txt
+
+10. Add content in Colors.txt (One in each line) - Red, Pink, White, Black, Blue, Orange, Purple, Grey.
+cmd:    vim Colors.txt
+        //press 'i' key to enter into insert mode
+        //type one color on each line
+        //press 'esc' key to come out of insert mode
+        //press ':' key to type command
+        //type 'wq' to save and quit from the editior
+
+11. To find the difference between fruits.txt and Colors.txt file.
+cmd:    diff fruits.txt Colors.txt
