@@ -1,0 +1,65 @@
+- Explain in your own words and examples, what is Shell Scripting for DevOps.
+
+Shell Script is a program through which we can write a bunch of commands, Which will get executed sequentially when we execute or run the script.
+In case of devops, with the help of shell script we can perform many monitoring tasks, administrative tasks and routine backups just by sending a set of commands in the form of script.
+Shell script aid in automating daily tasks and reducing repeitive tasks.
+
+
+ - What is `#!/bin/bash?` can we write `#!/bin/sh` as well?
+
+"#!/bin/bash" is known as shebang.This is used to instruct the Operating system to use bash as a command interpreter.
+It is a default shell used by majority of the systems. But to explicitly specify the shell type we use Shebang.
+We can also use "#!/bin/sh" as a command interpreter. This shebang instructs the internal system shell to start interpreting scripts.
+#!/bin/sh is used to execute scripts using sh, which is a Bourne shell. 
+
+
+ - Write a Shell Script which prints `I will complete #90DaysOofDevOps challenge`
+
+#!/bin/bash
+
+echo "I will complete #90DaysOofDevOps challenge"
+
+
+ - Write a Shell Script to take user input, input from arguments and print the variables.
+
+ #!/bin/bash
+
+#Taking input from user example
+echo "which challenge you have taken?"
+
+#read is used to take input from user
+read challenge
+echo "I have took $challenge challenge"
+
+#passing argument example
+echo "this is day $1"
+
+
+Output: 
+
+which challenge you have taken?
+90daysodDevops
+I have took 90daysodDevops challenge
+this is day 10
+
+
+ - Write an Example of If else in Shell Scripting by comparing 2 numbers
+
+ #!/bin/bash
+
+#reading one no from user and passing another no as arguments and comparing them using if else
+echo "1st no"
+read m
+if [ $1 -eq $m ]
+then
+        echo "Both variables are the same"
+else
+        echo "Both variables are different"
+fi
+
+Output:
+
+./ifelseexample.sh 2
+1st no
+5
+Both variables are different
