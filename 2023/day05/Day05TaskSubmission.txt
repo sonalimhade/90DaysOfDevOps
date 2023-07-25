@@ -1,0 +1,75 @@
+1) You have to do the same using Shell Script i.e using either Loops or command with start day and end day variables using arguments -
+
+ So Write a bash script createDirectories.sh that when the script is executed with three given arguments (one is directory name and second is start number of directories and third is the end number of directories ) it creates specified number of directories with a dynamic directory name.
+
+Example 1: When the script is executed as
+
+```./createDirectories.sh day 1 90```
+
+then it creates 90 directories as ```day1 day2 day3 .... day90```
+
+Solution:
+
+#!/bin/bash
+echo "enter no. of days"
+read n
+for((i=1; i<=$n; i++))
+do
+        mkdir day$i
+done
+
+# To check the output execute ls command 
+
+Example 2: When the script is executed as
+
+```./createDirectories.sh Movie 20 50```
+then it creates 50 directories as ```Movie20 Movie21 Movie23 ...Movie50```
+
+Solution:
+
+#!/bin/bash
+
+#create directories by passing arguments
+
+for((i=$2; i<=$3; i++))
+do
+        mkdir $1$i
+done
+
+# To check the output execute ls command 
+
+
+
+2) Create a Script to backup all your work done till now.
+
+ Backups are an important part of DevOps Engineers day to Day activities
+
+ Solution:
+
+#!/bin/bash
+
+Backup_directory=/home/ubuntu/Directories/*
+Backups=/home/ubuntu/backupfolder
+filename=$(date +'%d-%b-%y-%H-%M-%S').tar.gz
+
+echo "backup started For $filename"
+
+tar -cvf $Backups/$filename $Backup_directory
+
+echo "Backup completed"
+
+5) Create 2 users and just display their Usernames
+
+Solution:
+
+#!/bin/bash
+
+read -p "Enter no. of users" nou
+for(( i=1; i<=$nou; i++ ))
+do
+        read -p "Enter username for $i" username
+        sudo useradd -m $username
+done
+
+cat /etc/passwd
+
